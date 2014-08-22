@@ -6,7 +6,7 @@ Strap Metrics is a wearable analytics platform for developers. This repository c
 ##Strap Metrics for Google Glass SDK Quick Start Guide
 
 
-We use a ```WearableListenerService``` to communicate data from the watch to the phone. As a developer, you simply import the Strap objects, initialize, and send some events (optional). If you just initialize and don't send events, we'll send app diagnostics and sensor data automatically. 
+As a developer, you simply import the Strap object, instantiate, and send some events (optional). If you just instantiate and don't send events, we'll send app diagnostics and sensor data automatically. 
 
 Getting started with the Strap Metrics SDK is pretty straightforward. These steps shouldn't take more than 15-20 minutes. 
 
