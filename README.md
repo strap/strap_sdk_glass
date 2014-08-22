@@ -15,13 +15,18 @@ Getting started with the Strap Metrics SDK is pretty straightforward. These step
 1. Login to the dashboard at http://www.straphq.com/login and create an app. You'll need your App ID handy for the next step.
 2. Add strapmetrics-glass.aar to your project.
 3. ```import com.straphq.glass_sdk.Strap```
-4. Instantiate StrapMetrics and log events!
+4. Make sure your application can access the Internet.
+    
+        <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
+5. Instantiate StrapMetrics and log events!
 
         @Override
         public int onStartCommand(Intent intent, int flags, int startId) {
             // instantiate strap
             // kicks off device diagnostics collection
-            Strap strap = new Strap(getApplicationContext(), "rdjYKgrfeAPeMSjQ4");
+            Strap strap = new Strap(getApplicationContext(), "abc123abc123foo");
             // log events
             strap.logEvent("/app-started");
             if (mLiveCard == null) {
